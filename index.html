@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./resources/logo.png" alt="" />
+      </div>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="prideofcbe.html">Pride of Coimbatore</a></li>
+                <li><a href="tourism.html">Places to Visit</a></li>
+                <li><a href="Specials.html">Special Food</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <h2 id="text"><span>Chillendra</span> Coimbatore</h2>
+      <div class="clouds">
+        <img src="resources/cloud1.png" alt="" style="--i: 1" />
+        <img src="resources/cloud2.png" alt="" style="--i: 2" />
+        <img src="resources/cloud3.png" alt="" style="--i: 3" />
+        <img src="resources/cloud4.png" alt="" style="--i: 4" />
+        <img src="resources/cloud5.png" alt="" style="--i: 5" />
+        <img src="resources/cloud1.png" alt="" style="--i: 10" />
+        <img src="resources/cloud2.png" alt="" style="--i: 9" />
+        <img src="resources/cloud3.png" alt="" style="--i: 8" />
+        <img src="resources/cloud4.png" alt="" style="--i: 7" />
+        <img src="resources/cloud5.png" alt="" style="--i: 6" />
+      </div>
+    </div>
+    <section>
+      <h2>Coimbatore.</h2>
+      <p>
+        Coimbatore is a place where, urban and rural cultures coexist; green
+        fields, cold breeze, and monsoon drizzle come with all the sophisms of a
+        cosmopolitan. It is mesmerizingly located on the banks of Noyyal River
+        and the foot of the Western Ghats and the basis for various hill
+        stations like Ooty, Aanaikatti, Yercaud, Thekkady, Topslip, and
+        Annamalai. Besides Coimbatore is a home for industries and
+        entrepreneurship, renowned for its textile mills and engineering
+        industry. "Siruvani Water" which runs through Coimbatore is claimed as
+        the world's second tastiest water after Nile. Coimbatore is also known
+        for its Sweet people and their caring slang of tamil language. In the
+        rain shadow region of the Western ghats, Coimbatore enjoys a very
+        pleasant climate all the year round, aided by the fresh breeze that
+        flows through the 25 kms long Palakkad gap. The rich black soil of the
+        region has contributed to Coimbatore’s flourishing agriculture industry
+        and, it is in fact the successful growth of cotton that served as a
+        foundation for the establishment of its famous textile industry. The
+        first textile mill came as far back as 1888 after that many textile
+        mills were started and provided many employment opportunities to within
+        as well as neighboring Districts. The result has been a strong economy
+        and a reputation as one of the greatest industrial cities in South
+        India.
+      </p>
+      <div class="btn">
+        <a href="tourism.html"
+          ><button>
+            COIMBATORE<br />
+            WELCOMES YOU
+          </button></a
+        >
+      </div>
+    </section>
+    <footer>
+      <h1><span>&copy Chillendra Coimbatore</span></h1>
+      <div class="wrapper">
+        <div class="button">
+          <div class="icon"><i class="fab fa-youtube"></i></div>
+          <span>YouTube</span>
+        </div>
+        <div class="button">
+          <div class="icon"><i class="fab fa-instagram"></i></div>
+          <span>Instagram</span>
+        </div>
+
+        <div class="button">
+          <div class="icon"><i class="fab fa-twitter"></i></div>
+          <span>Twitter</span>
+        </div>
+      </div>
+    </footer>
+    <!-----------------------------------------Loading Screen--------------------------------------------->
+    <div class="loader-wrapper">
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <circle id="test" cx="40" cy="40" r="32"></circle>
+        </svg>
+      </div>
+
+      <div class="loader triangle">
+        <svg viewBox="0 0 86 80">
+          <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+      </div>
+
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+      </div>
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+    <script type="text/javascript">
+      let text = document.getElementById("text");
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        text.style.marginBottom = value * 2 + "px";
+      });
+    </script>
+  </body>
+</html>

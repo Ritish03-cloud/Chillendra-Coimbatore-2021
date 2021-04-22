@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact us</title>
+    <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./resources/logo.png" alt="" />
+      </div>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="prideofcbe.html">Pride of Coimbatore</a></li>
+                <li><a href="tourism.html">Places to Visit</a></li>
+                <li><a href="Specials.html">Special Food</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="contact-box">
+        <div class="left">
+          <h1>Chillendra Coimbatore</h1>
+          <ul>
+            <a href="">
+              <li><i class="fab fa-youtube"></i></li>
+            </a>
+            <a href="">
+              <li><i class="fab fa-instagram"></i></li>
+            </a>
+            <a href="">
+              <li><i class="fab fa-twitter"></i></li>
+            </a>
+          </ul>
+        </div>
+        <div class="right">
+          <h2>Share Your Experience</h2>
+          <form   action="https://formspree.io/f/xbjqlqpa"
+          method="POST" class="contact-form">
+            <input
+              type="text"
+              name="Name"
+              id="name"
+              class="field"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              class="field"
+              placeholder="Your email"
+              required
+            />
+            <input type="text" name="Number"
+            id="Number" class="field" placeholder="Phone"/>
+            <textarea name="Message"
+            id="message"placeholder="Message" class="field"></textarea>
+            <input type="submit" class="btn" value="Send" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
